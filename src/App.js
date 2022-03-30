@@ -4,6 +4,8 @@ import Coins from "./components/Coins/Coins";
 import Header from "./components/Header/Header";
 import Homepage from "./components/Homepage/Homepage";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import About from "./components/About/About";
 
 const App = () => {
   return (
@@ -13,7 +15,9 @@ const App = () => {
         <Route path="/" element={<Homepage />} />
         <Route path="/coins" element={<Coins />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
       </Routes>
+      <Footer />
     </div>
   );
 };
